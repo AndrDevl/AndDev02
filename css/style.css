@@ -1,0 +1,25 @@
+body {
+    padding-bottom: 500pxx
+    ;
+}
+div {
+    margin-bottom: 10px;
+
+}
+
+div input,
+div label {
+    display: block;
+}
+
+img {
+    padding-bottom: 50px;
+    border: 2px;
+    margin-top: auto;
+}
+
+.radio label,
+.radio input,
+.radio span {
+    display: inline-block;
+}

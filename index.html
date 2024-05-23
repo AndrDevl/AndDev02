@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--imagem-->
+    <img src="img/form-image.2.jpg" alt="Aproveite o site!"> <img src="img/O-que-e-um-desenvolvedor-front-end-2.png" alt="">
+    
+    <h1>Formulário de conhecimento das minhas habilidades em programação!</h1>
+     
+    <div>
+        <p>"Como todos sabem, me chamo André, tenho 24 anos, sou iniciante em programação e recentemente comecei a programar. Venho aqui, através deste formulário, testar meu avanço em programar uma página em HTML. Espero que você, que entrou aqui, possa me ajudar respondendo a este formulário. Desde já, agradeço. Fique à vontade."
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <h1> Este formulário não salva e nem envia dados para o banco de dados, está direcionado apenas para testes!</h1>
+        </p>
+    </div>
+
+    <!-- Primeiro form-->
+    <!-- Segundo form-->
+    <form action="resgister.php" method="post">
+       <div>
+            <label>Nome:</label>
+            <input type="text"/>
+       </div>
+       
+       <!-- atributo name-->
+       <div>
+        <!-- atributo label-->
+
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+       </div>
+       <!-- Select-->
+       <div>
+        <label for="Job">Selecione a sua profissão</label>
+        <select name="Job">
+            <option value="Programador">Programador</option>
+            <option value="Analista">Analista</option>
+            <option value="Carpinteiro">Carpinteiro</option>
+            <option value="Tester">Tester/QA</option>
+            <option value="DevOps">DevOps</option>
+        </select>  
+      </div>
+       <!--Atributos Select-->
+       <div>
+        <label for="contract">Você leu o termos do contrato</label> 
+        <select name="contract">
+            <option value="sim">Sim</option>
+            <option value="nao" selected>Não</option>
+        </select>
+       
+       </div>
+       <!-- multipla opções-->
+
+      <div>
+        <label for="items">Selecione os itens desejados:</label>
+        <select name="items" multiple>
+         <option value="pera">Pera</option>
+         <option value="Feijão">Feijão</option>
+         <option value="Abacate">Abacate</option>
+         <option value="Detergente">Detergente</option>
+        </select>
+      </div>
+      <!-- tetxarea-->
+      <div>
+        <label for="comment">Informe a sua opnião sobre o o formulário</label>
+        <textarea name="comment"></textarea>
+      </div>
+      <!-- fieldet-->
+      <div>
+        <fieldset>
+            <legend>Preencha a suas informações</legend>
+            <label for="fistname">Nome</label>
+            <input type="text" name="fistname">
+            <label for="lastname">Sobrenome</label>
+            <input type="text" name="lastname">
+        </fieldset>
+      </div>
+      <!-- datalist-->
+      <div>
+        <label for="flavor">Escolha o sabor do seu sorvete preferido:</label>
+        <input type="text" list="flavors" name="flavor">
+
+        <datalist id="flavors">
+            <option value="Flocos"></option>
+            <option value="Milho"></option>
+            <option value="Chocolate"></option>
+            <option value="Morango"></option>
+        </datalist>
+      </div>
+      <!--senha-->
+      <div>
+        <label for="password">Digite uma senha aleatória:</label>
+        <input type="password" name="password">
+      </div>
+      <!-- radio button-->
+      <div>
+        <label for="car_model">Escolha o modelo do seu carro ou carro dos sonhos:</label>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model">
+            <label for="bmw">Bmw X1</label>
+        </div>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model">
+            <label for="tesla">Tesla model 3</label>
+        </div>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model">
+            <label for="jeep"> Jeep Compass</label>
+        </div>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model">
+            <label for="Mercedes">Mercedes Gle-63-amg</label>
+        </div>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model">
+            <label for="fiat">FastBack</label>
+        </div>
+      </div>
+      <!-- checkbox-->
+      <div>
+        <label for="optionals">Opcionais do carro:</label>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="big_tires">
+            <label for="big_tires">Pneus Grandes</label>
+          
+        </div>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="turbo_engine">
+            <label for="turbo_engine">Motor turbo</label>
+          
+        </div>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="speed">
+            <label for="speed">Veloz</label>
+          
+        </div>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="auto_perfomace">
+            <label for="auto_perfomace">Auta performace</label>
+          
+        </div>
+      </div>
+
+      <!-- datas-->
+      <div>
+        <label for="birthday"> Data prefirida:</label>
+        <input type="date" name="birthday">
+      </div>
+
+      <!--arquivos-->
+      <div>
+        <label for="image">Insura uma image</label>
+        <input type="file" name="image">
+      </div>
+
+      <!-- numeros-->
+      <div>
+        <label for="salary">Quanto você ganha em 1 dia?</label>
+        <input type="number" name="salary">
+      </div>
+
+      <!-- emails-->
+       <div>
+        <label for="email">Digite um email qualquer:</label>
+        <input type="email" name="email">
+
+       </div>
+
+       <!--value-->
+       <div>
+        <label for="value">Digite algum valor:</label>
+        <input type="text" value="O meu valor é este 2" name="value">
+       </div>
+
+       <!-- disabled-->
+       <div>
+        <p> Tente mudar o valor:</p>
+        <input type="text"  value="Não precisa preencher!" disabled>
+       </div>
+
+       <!-- plaacceholder-->
+       <div>
+        <label for="currentejob">Digite a sua profissão:</label>
+        <input type="text" name="currentejob" placeholder="No que você está trabalhando agora?">
+       </div>
+
+       <!-- required-->
+       <div>
+        <label for="birthyear">Ano de nascimento:</label>
+        <input type="text"plaacceholder="Digite o ano do seu nascimento" required>
+       </div>
+
+       <div>
+        <h2> Muito obrigado pelo seu tempo, envie um comentario sobre oque achou das minhas aplicações no whatsapp;</h2>
+        <p>Para entrar em contato comigo no WhatsApp, clique no link abaixo:</p>
+        <a href="https://wa.me/5511939615436?text=Ol%C3%A1" target="_blank">Clique aqui para iniciar uma conversa.</a>
+       </div>
+
+      <!-- resetar form-->
+      <input type="reset" value="Limpar">
+       <!-- envio de form (se precisar pegar no curso)-->
+      
+    </form>
+  </body>
+</html>
